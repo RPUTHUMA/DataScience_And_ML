@@ -1,2 +1,2 @@
 # Statistic
-Notes on statistic topics
+Notes on statistic and probability topics
