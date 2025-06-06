@@ -1,0 +1,15 @@
+d = |Ax + By + Cz + D| / √(A^2 + B^2 + C^2)
+
+
+Where:
+(x, y, z) are the coordinates of the point. 
+Ax + By + Cz + D = 0 is the equation of the plane. 
+A, B, and C are the coefficients of x, y, and z in the plane's equation. 
+D is the constant term in the plane's equation. 
+
+
+
+d= W^T s/||W||
+W^T = transpose of W
+S = point
+||W|| = magnitude
