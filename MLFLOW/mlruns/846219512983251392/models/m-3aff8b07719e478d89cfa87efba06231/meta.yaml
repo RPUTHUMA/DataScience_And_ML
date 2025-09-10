@@ -1,0 +1,10 @@
+artifact_location: file:///Users/rakeshputhumana/Desktop/Study/DataScience_And_ML/MLFLOW/mlruns/846219512983251392/models/m-3aff8b07719e478d89cfa87efba06231/artifacts
+creation_timestamp: 1757440477032
+experiment_id: '846219512983251392'
+last_updated_timestamp: 1757440478788
+model_id: m-3aff8b07719e478d89cfa87efba06231
+model_type: ''
+name: model
+source_run_id: 0911387dc6a34082ae5cae7c76e0a93e
+status: 2
+status_message: null

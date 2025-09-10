@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/rakeshputhumana/Desktop/Study/DataScience_And_ML/MLFLOW/mlruns/846219512983251392/4dc1485e326241119773bc16001d5a79/artifacts
+end_time: 1757440482770
+entry_point_name: ''
+experiment_id: '846219512983251392'
+lifecycle_stage: active
+run_id: 4dc1485e326241119773bc16001d5a79
+run_name: XGBClassifier With SMOTE
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757440480829
+status: 3
+tags: []
+user_id: rakeshputhumana

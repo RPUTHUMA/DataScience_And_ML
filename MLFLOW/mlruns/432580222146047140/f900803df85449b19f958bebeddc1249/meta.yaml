@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/432580222146047140/f900803df85449b19f958bebeddc1249/artifacts
+end_time: 1757440090223
+entry_point_name: ''
+experiment_id: '432580222146047140'
+lifecycle_stage: active
+run_id: f900803df85449b19f958bebeddc1249
+run_name: crawling-ox-879
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757440087666
+status: 3
+tags: []
+user_id: rakeshputhumana

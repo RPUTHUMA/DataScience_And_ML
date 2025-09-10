@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/rakeshputhumana/Desktop/Study/DataScience_And_ML/MLFLOW/mlruns/846219512983251392/767fb3477ee64c73a4b53488d7377756/artifacts
+end_time: 1757440480811
+entry_point_name: ''
+experiment_id: '846219512983251392'
+lifecycle_stage: active
+run_id: 767fb3477ee64c73a4b53488d7377756
+run_name: XGBClassifier
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757440478818
+status: 3
+tags: []
+user_id: rakeshputhumana

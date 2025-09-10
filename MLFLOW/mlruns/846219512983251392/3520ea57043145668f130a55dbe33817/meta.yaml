@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/rakeshputhumana/Desktop/Study/DataScience_And_ML/MLFLOW/mlruns/846219512983251392/3520ea57043145668f130a55dbe33817/artifacts
+end_time: 1757440486631
+entry_point_name: ''
+experiment_id: '846219512983251392'
+lifecycle_stage: active
+run_id: 3520ea57043145668f130a55dbe33817
+run_name: big-auk-79
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757440486586
+status: 4
+tags: []
+user_id: rakeshputhumana

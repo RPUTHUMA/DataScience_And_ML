@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/rakeshputhumana/Desktop/Study/DataScience_And_ML/MLFLOW/mlruns/846219512983251392/dc7dee7d94e045d79d76f1aa744576aa/artifacts
+end_time: 1757440476979
+entry_point_name: ''
+experiment_id: '846219512983251392'
+lifecycle_stage: active
+run_id: dc7dee7d94e045d79d76f1aa744576aa
+run_name: Logistic Regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757440474629
+status: 3
+tags: []
+user_id: rakeshputhumana

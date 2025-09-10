@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/rakeshputhumana/Desktop/Study/DataScience_And_ML/MLFLOW/mlruns/846219512983251392/049197173560481cbfb267e063bf7a2b/artifacts
+end_time: 1757440588471
+entry_point_name: ''
+experiment_id: '846219512983251392'
+lifecycle_stage: active
+run_id: 049197173560481cbfb267e063bf7a2b
+run_name: luxuriant-zebra-613
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757440588430
+status: 4
+tags: []
+user_id: rakeshputhumana
