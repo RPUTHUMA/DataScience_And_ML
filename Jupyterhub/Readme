@@ -1,0 +1,102 @@
+🔹 Phase 2: Deploy JupyterHub in Minikube (via Helm)
+
+The recommended way is using the Zero-to-JupyterHub Helm chart.
+
+1. Install Helm
+brew install helm
+
+2. Add JupyterHub Helm repo
+helm repo add jupyterhub https://jupyterhub.github.io/helm-chart/
+helm repo update
+
+3. Create a namespace for JupyterHub
+kubectl create namespace jhub
+
+4. Create a config.yaml for JupyterHub
+
+Example config.yaml:
+proxy:
+  secretToken: "super-secret-token"
+
+hub:
+  config:
+    JupyterHub:
+      authenticator_class: dummy
+      dummy_authenticator:
+        password: "password"   # all users can login with this
+
+singleuser:
+  image:
+    name: jupyter/minimal-notebook
+    tag: latest
+
+5. Install JupyterHub with Helm
+helm upgrade --cleanup-on-fail \
+  jhub jupyterhub/jupyterhub \
+  --namespace jhub \
+  --create-namespace \
+  --version=3.3.7 \
+  --values config.yaml
+
+  helm install jhub jupyterhub/jupyterhub \
+  --namespace jhub \
+  --create-namespace \
+  --version=4.2.0 \
+  --values config.yaml
+
+
+
+(The version number may change — helm search repo jupyterhub will show the latest.)
+6. Check deployment
+kubectl get pods -n jhub
+
+
+Wait until all pods are Running.
+
+7. Expose JupyterHub service
+
+Forward port from the proxy service:
+
+kubectl --namespace jhub port-forward svc/proxy-public 8080:80
+
+
+Now you can access JupyterHub at 👉 http://127.0.0.1:8080
+
+## Stopping the h jupyterhub
+
+🔹 1. Stop JupyterHub (temporarily)
+
+This just scales pods down but keeps config/data.
+
+helm uninstall jhub -n jhub
+
+
+This removes the JupyterHub pods/services, but if you used a PersistentVolumeClaim (PVC), user data is preserved.
+
+🔹 2. Restart JupyterHub (reinstall)
+
+To bring it back:
+
+helm install jhub jupyterhub/jupyterhub \
+  --namespace jhub \
+  --create-namespace \
+  --version=4.2.0 \
+  --values config.yaml
+
+🔹 3. Stop and restart only pods (lighter way)
+
+If you don’t want to uninstall/reinstall the release, you can just restart pods:
+
+Stop (delete) pods:
+
+kubectl delete pods -n jhub --all
+
+
+Kubernetes will automatically recreate them based on the Helm release.
+
+Restart deployment (proxy or hub):
+
+kubectl rollout restart deployment hub -n jhub
+kubectl rollout restart deployment proxy -n jhub
+
+🔹

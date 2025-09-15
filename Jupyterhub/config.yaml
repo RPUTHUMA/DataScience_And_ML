@@ -1,0 +1,16 @@
+proxy:
+  secretToken: "super-secret-token"
+
+hub:
+  config:
+    JupyterHub:
+      authenticator_class: dummy
+      dummy_authenticator:
+        password: "password"   # all users can login with this
+
+singleuser:
+  image:
+    #name: jupyter/minimal-notebook
+    name: jupyter/base-notebook
+    tag: latest
+  defaultUrl: "/lab"
